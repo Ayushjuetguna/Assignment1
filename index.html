@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>DRR Screen</title>
+  </head>
+  <body>
+    <div class="drr-container">
+      <h1>Date Range Report</h1>
+      <div class="date-selection">
+        <div class="date-picker">
+          <label for="start-date">Start Date:</label>
+          <input type="date" id="start-date" />
+        </div>
+        <div class="date-picker">
+          <label for="end-date">End Date:</label>
+          <input type="date" id="end-date" />
+        </div>
+      </div>
+      <div class="excluded-dates">
+        <label for="excluded-dates">Dates Excluded:</label>
+        <input
+          type="text"
+          id="excluded-dates"
+          placeholder="Enter excluded dates (e.g., 2023-10-08, 2023-10-15)"
+        />
+      </div>
+      <div class="display-results">
+        <div class="result">
+          <label for="month-year">Month, Year:</label>
+          <input type="text" id="month-year" readonly />
+        </div>
+        <div class="result">
+          <label for="number-of-days">Number of Days:</label>
+          <input type="text" id="number-of-days" readonly />
+        </div>
+        <div class="lead-count">
+          <label for="number-of-leads">Number of Leads:</label>
+          <input type="number" id="number-of-leads" />
+        </div>
+        <div class="result">
+          <label for="expected-lead-count">Expected Lead Count:</label>
+          <input type="text" id="expected-lead-count" readonly />
+        </div>
+      </div>
+      <button id="save-button">Save</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

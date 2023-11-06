@@ -1,0 +1,102 @@
+/* Reset some default browser styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background color and text color to the body */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the main container */
+.drr-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the header */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Style labels for form elements */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Style date picker and excluded dates input */
+.date-picker,
+.excluded-dates {
+    margin-bottom: 10px;
+}
+
+input[type="date"],
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Style result inputs (read-only) */
+.result {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Style the Save button */
+#save-button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#save-button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive styles for small screens */
+@media (max-width: 768px) {
+    .drr-container {
+        width: 100%;
+        margin: 0;
+    }
+
+    input[type="date"],
+    input[type="text"],
+    input[type="number"] {
+        font-size: 14px;
+    }
+
+    .result {
+        font-size: 14px;
+    }
+
+    #save-button {
+        font-size: 14px;
+    }
+}
